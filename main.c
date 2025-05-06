@@ -2,25 +2,8 @@
 #include <stdlib.h>
 #include <locale.h>
 
-// Exercício 2
-
-int fatorial(){
-    // declaração do tipo das variaives utilizadas, sendo i o incrimento e o Y a variavel de controle para calcular o fatorial
-    int numero, resultado_fatorial, i, y;
-    printf("Digite um número inteiro entre 1 e 20:\t");
-    scanf("%i", &numero);
-    // inicio do primeiro laço de repetição para imprimir a lista de números desde o 1 até o desejado
-    printf("\nOs fatoriais do numero 1 até %i são:\n", numero);
-    for (i=1; i<=numero; i++){
-        printf("\n%i! =\t", i);
-        resultado_fatorial = 1;
-        // segundo laço de repetição utilizado para calcular o fatorial dos números
-        for (y=i; y>=1; y--){
-            resultado_fatorial *= y;
-        }
-        printf("%i", resultado_fatorial);
-    }
-    // declarando variaveis a serem utilizadas
+// Exercício 1
+// declarando variaveis a serem utilizadas
     int sequencia_fibonacci(){
     int tamanho_sequencia, z;
     tamanho_sequencia= 0;
@@ -47,6 +30,30 @@ int fatorial(){
 
     printf("\n");
     }
+
+
+
+
+
+
+// Exercício 2
+int fatorial(){
+    // declaração do tipo das variaives utilizadas, sendo i o incrimento e o Y a variavel de controle para calcular o fatorial
+    int numero, resultado_fatorial, i, y;
+    printf("Digite um número inteiro entre 1 e 20:\t");
+    scanf("%i", &numero);
+    // inicio do primeiro laço de repetição para imprimir a lista de números desde o 1 até o desejado
+    printf("\nOs fatoriais do numero 1 até %i são:\n", numero);
+    for (i=1; i<=numero; i++){
+        printf("\n%i! =\t", i);
+        resultado_fatorial = 1;
+        // segundo laço de repetição utilizado para calcular o fatorial dos números
+        for (y=i; y>=1; y--){
+            resultado_fatorial *= y;
+        }
+        printf("%i", resultado_fatorial);
+    }
+    
 // Exercício 3
 
 int Palindromo(char palavra[]);
