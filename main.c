@@ -54,12 +54,17 @@ void fatorial() {
 }
 
 // Exercício 3
+
+// Conta quantos caracteres tem a palavra
+
 int Palindromo(char palavra[]) {
     int tamanho = 0;
     while (palavra[tamanho] != '\0') {
         tamanho++;
     }
-
+    
+  // Compara os caracteres do início com os do fim
+    
     for (int i = 0; i < tamanho / 2; i++) {
         if (palavra[i] != palavra[tamanho - 1 - i]) {
             return 0;
@@ -91,7 +96,8 @@ void verificarSubstring() {
     scanf("%s", str1);
     printf("Digite a segunda string: ");
     scanf("%s", str2);
-
+    
+ // Percorre a string1 até achar a primeira letra da string2, e vai na sequência para tentar achar a string2 completa
     for (i = 0; str1[i] != 0; i++) {
         for (j = 0; str2[j] == str1[i + j]; j++) {
             if (str2[j + 1] == 0) {
