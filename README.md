@@ -6,6 +6,8 @@ Preenche o vetor com os N primeiros números da sequência de Fibonacci;
 
 Informa ao usuário a sequência.
 
+
+
 Opção 2: Fatoriais 
 
 Leia um número inteiro N (entre 1 e 20);
@@ -16,6 +18,8 @@ Informa ao usuário os fatoriais.
 
 
 
+
+
 Opção 3: Palíndromo
 
 Lê uma palavra do usuário (sem espaços, até 100 caracteres);
@@ -23,6 +27,8 @@ Lê uma palavra do usuário (sem espaços, até 100 caracteres);
 Verifica se essa palavra é um palíndromo (ou seja, se ela é igual quando lida de trás para frente);
 
 Informa ao usuário se a palavra é ou não um palíndromo.
+
+
 
 
 Opção 4: Verificar Substring
