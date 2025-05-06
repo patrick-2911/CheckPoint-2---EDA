@@ -2,41 +2,33 @@
 #include <stdlib.h>
 #include <locale.h>
 
-int Palindromo(char palavra[]);
-void verificarPalindromo();
+void verificarSubstring();
 
 int main() {
     setlocale(LC_ALL, "Portuguese");
-    verificarPalindromo();
+    verificarSubstring();
     return 0;
 }
 
-int Palindromo(char palavra[]) {
-    int tamanho = 0;
+void verificarSubstring() {
+    char str1[101], str2[101];
+    int i, j;
+
+    printf("Digite a primeira string: ");
+    scanf("%s", str1);
+    printf("Digite a segunda string: ");
+    scanf("%s", str2);
 
 
-    while (palavra[tamanho] != '\0') {
-        tamanho++;
-    }
+    for (i = 0; str1[i] != 0; i++) {
 
-    for (int i = 0; i < tamanho / 2; i++) {
-        if (palavra[i] != palavra[tamanho - 1 - i]) {
-            return 0;
+        for (j = 0; str2[j] == str1[i + j]; j++) {
+            if (str2[j + 1] == 0) {
+                printf("A segunda string está contida na primeira.\n");
+                return;
+            }
         }
     }
 
-    return 1;
-}
-
-void verificarPalindromo() {
-    char palavra[101];
-
-    printf("Digite uma palavra: ");
-    scanf("%s", palavra);
-
-    if (Palindromo(palavra)) {
-        printf("A palavra é um palíndromo.\n");
-    } else {
-        printf("A palavra não é um palíndromo.\n");
-    }
+    printf("A segunda string não está contida na primeira.\n");
 }
