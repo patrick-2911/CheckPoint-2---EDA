@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <locale.h>
 
+// Exercício 2
+
 int main(){
     // declaração do tipo das variaives utilizadas, sendo i o incrimento e o Y a variavel de controle para calcular o fatorial
     int numero, resultado_fatorial, i, y;
@@ -43,7 +45,7 @@ int main(){
 
     printf("\n");
 
-
+// Exercício 3
 
 int Palindromo(char palavra[]);
 void verificarPalindromo();
@@ -83,9 +85,8 @@ void verificarPalindromo() {
         printf("A palavra não é um palíndromo.\n");
     }
 }
-#include <stdio.h>
-#include <stdlib.h>
-#include <locale.h>
+
+//Exercício 4
 
 void verificarSubstring();
 
