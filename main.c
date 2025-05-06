@@ -4,7 +4,7 @@
 
 // Exercício 2
 
-int main(){
+int fatorial(){
     // declaração do tipo das variaives utilizadas, sendo i o incrimento e o Y a variavel de controle para calcular o fatorial
     int numero, resultado_fatorial, i, y;
     printf("Digite um número inteiro entre 1 e 20:\t");
@@ -21,6 +21,7 @@ int main(){
         printf("%i", resultado_fatorial);
     }
     // declarando variaveis a serem utilizadas
+    int sequencia_fibonacci(){
     int tamanho_sequencia, z;
     tamanho_sequencia= 0;
     printf("\nDigite a quantidade de de números da sequência de Fibonacci entre 1 e 50:\t ");
@@ -35,16 +36,17 @@ int main(){
     vetor_numeros[0] = 0;
     if (tamanho_sequencia > 1)
         vetor_numeros[1] = 1;
-
+    // Utilizando o z como incrimento para fazer a lógica de fibonnaci
     for (z = 2; z < tamanho_sequencia; z++){
         vetor_numeros[z] = vetor_numeros[z - 2] + vetor_numeros[z - 1];
-    }
+    } 
+    // print da sequencia acionando os vetores para a execução do código
     printf("\nA sequência de Fibonacci com %i posições é:\n", tamanho_sequencia);
     for (z = 0; z < tamanho_sequencia; z++)
         printf("%i\t", vetor_numeros[z]);
 
     printf("\n");
-
+    }
 // Exercício 3
 
 int Palindromo(char palavra[]);
