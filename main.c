@@ -32,10 +32,6 @@
     }
 
 
-
-
-
-
 // Exercício 2
 int fatorial(){
     // declaração do tipo das variaives utilizadas, sendo i o incrimento e o Y a variavel de controle para calcular o fatorial
@@ -53,7 +49,8 @@ int fatorial(){
         }
         printf("%i", resultado_fatorial);
     }
-    
+
+
 // Exercício 3
 
 int Palindromo(char palavra[]);
@@ -94,6 +91,7 @@ void verificarPalindromo() {
         printf("A palavra não é um palíndromo.\n");
     }
 }
+
 
 //Exercício 4
 
