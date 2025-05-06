@@ -2,39 +2,6 @@
 #include <stdlib.h>
 #include <locale.h>
 
-void verificarSubstring();
-
-int main() {
-    setlocale(LC_ALL, "Portuguese");
-    verificarSubstring();
-    return 0;
-}
-
-void verificarSubstring() {
-    char str1[101], str2[101];
-    int i, j;
-
-    printf("Digite a primeira string: ");
-    scanf("%s", str1);
-    printf("Digite a segunda string: ");
-    scanf("%s", str2);
-
-
-    for (i = 0; str1[i] != 0; i++) {
-
-        for (j = 0; str2[j] == str1[i + j]; j++) {
-            if (str2[j + 1] == 0) {
-                printf("A segunda string está contida na primeira.\n");
-                return;
-            }
-        }
-    }
-
-    printf("A segunda string não está contida na primeira.\n");
-}
-#include <stdio.h>
-#include <stdlib.h>
-
 int main(){
     // declaração do tipo das variaives utilizadas, sendo i o incrimento e o Y a variavel de controle para calcular o fatorial
     int numero, resultado_fatorial, i, y;
@@ -76,3 +43,77 @@ int main(){
 
     printf("\n");
 
+
+
+int Palindromo(char palavra[]);
+void verificarPalindromo();
+
+int main() {
+    setlocale(LC_ALL, "Portuguese");
+    verificarPalindromo();
+    return 0;
+}
+
+int Palindromo(char palavra[]) {
+    int tamanho = 0;
+
+
+    while (palavra[tamanho] != '\0') {
+        tamanho++;
+    }
+
+    for (int i = 0; i < tamanho / 2; i++) {
+        if (palavra[i] != palavra[tamanho - 1 - i]) {
+            return 0;
+        }
+    }
+
+    return 1;
+}
+
+void verificarPalindromo() {
+    char palavra[101];
+
+    printf("Digite uma palavra: ");
+    scanf("%s", palavra);
+
+    if (Palindromo(palavra)) {
+        printf("A palavra é um palíndromo.\n");
+    } else {
+        printf("A palavra não é um palíndromo.\n");
+    }
+}
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+void verificarSubstring();
+
+int main() {
+    setlocale(LC_ALL, "Portuguese");
+    verificarSubstring();
+    return 0;
+}
+
+void verificarSubstring() {
+    char str1[101], str2[101];
+    int i, j;
+
+    printf("Digite a primeira string: ");
+    scanf("%s", str1);
+    printf("Digite a segunda string: ");
+    scanf("%s", str2);
+
+
+    for (i = 0; str1[i] != 0; i++) {
+
+        for (j = 0; str2[j] == str1[i + j]; j++) {
+            if (str2[j + 1] == 0) {
+                printf("A segunda string está contida na primeira.\n");
+                return;
+            }
+        }
+    }
+
+    printf("A segunda string não está contida na primeira.\n");
+}
