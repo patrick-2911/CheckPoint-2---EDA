@@ -4,8 +4,9 @@
 
 // Exercício 1
 void sequencia_fibonacci() {
+    // declarando as variáveis que serão utilizadas
     int tamanho_sequencia, z;
-
+    
     printf("\nDigite a quantidade de números da sequência de Fibonacci entre 1 e 50:\t ");
     scanf("%i", &tamanho_sequencia);
 
@@ -13,13 +14,13 @@ void sequencia_fibonacci() {
         tamanho_sequencia = 1;
     else if (tamanho_sequencia > 50)
         tamanho_sequencia = 50;
-
+    // declarando o vetor com o tamanho máximo possível determinado 
     int vetor_numeros[50];
     vetor_numeros[0] = 0;
 
     if (tamanho_sequencia > 1)
         vetor_numeros[1] = 1;
-
+    // utilizando o z como incremento para fazer a lógica da repetição 
     for (z = 2; z < tamanho_sequencia; z++) {
         vetor_numeros[z] = vetor_numeros[z - 2] + vetor_numeros[z - 1];
     }
@@ -33,16 +34,17 @@ void sequencia_fibonacci() {
 
 // Exercício 2
 void fatorial() {
+    // declaração dos tipos das variáveis utilizadas, sendo i para incremento e y para calcular o fatorial
     int numero, resultado_fatorial, i, y;
-
+    
     printf("Digite um número inteiro entre 1 e 20:\t");
     scanf("%i", &numero);
-
     printf("\nOs fatoriais do número 1 até %i são:\n", numero);
-
+    // inicia o primerio laço de repetição para imprimir a lista do número 1 até o desejado
     for (i = 1; i <= numero; i++) {
         printf("\n%i! = ", i);
         resultado_fatorial = 1;
+        // segundo laço para calcular o fatorial
         for (y = i; y >= 1; y--) {
             resultado_fatorial *= y;
         }
