@@ -1,5 +1,17 @@
 Opção 1: Sequência de Fibonacci 
 
+
+
+
+
+
+
+
+
+
+
+
+
 Lê um número inteiro N (entre 1 e 50);
 
 Preenche o vetor com os N primeiros números da sequência de Fibonacci;
